@@ -12,8 +12,15 @@ export default async function handler(req, res) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const toEmail = process.env.CONTACT_TO_EMAIL || 'streetastreet90@gmail.com';
-  const fromEmail = process.env.RESEND_FROM_EMAIL || 'Cáritas Banyeres <onboarding@resend.dev>';
+  const toEmail =
+    process.env.CONTACT_TO ||
+    process.env.CONTACT_TO_EMAIL ||
+    'caritasbanyeres@gmail.com';
+  
+  const fromEmail =
+    process.env.CONTACT_FROM ||
+    process.env.RESEND_FROM_EMAIL ||
+    'Caritas Banyeres <contacto@caritasbanyeres.com>';
 
   if (!apiKey) {
     return res.status(500).json({ ok: false, error: 'RESEND_API_KEY is not configured' });
