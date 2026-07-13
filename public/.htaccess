@@ -1,0 +1,14 @@
+# Cáritas Banyeres · React SPA + PHP contact form for Apache/cdmon
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Keep real files/folders and PHP endpoints working
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # React Router fallback
+  RewriteRule ^ index.html [L]
+</IfModule>
