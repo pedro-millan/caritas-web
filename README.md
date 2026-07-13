@@ -1,50 +1,101 @@
-# Cáritas Banyeres de Mariola · React
+# Cáritas Parroquial Banyeres de Mariola
 
-Proyecto web construido con React, React Router y Framer Motion.
+Sitio web institucional desarrollado para Cáritas Parroquial Banyeres de Mariola, con el objetivo de presentar de forma clara, cercana y visual sus proyectos solidarios, actividades comunitarias, noticias y vías de colaboración.
 
-## Estado de esta versión
+La web reúne información sobre la labor local de Cáritas, el ropero solidario, las campañas de ayuda, el comercio justo, las ferias solidarias y el proyecto de apoyo en Ranchi, India.
 
-- Panel de administración eliminado/desactivado para poder mantener la web sin base de datos ni PHP de pago.
-- Contenido gestionado de forma estática desde el código fuente.
-- Nueva foto `fs2.webp` integrada en la página **Ferias Solidarias** con texto propio.
-- Build de producción generado en `dist/`.
-- Formulario preparado para funcionar con **Resend mediante una función serverless** incluida en `api/contact.js`.
+## Características principales
 
-## Desarrollo local
+- Diseño responsive adaptado a escritorio, tablet y móvil.
+- Navegación clara por secciones institucionales.
+- Páginas individuales para proyectos solidarios.
+- Sección de noticias y actividades.
+- Formulario de contacto.
+- Diseño visual con imágenes hero, bloques parallax y composiciones onduladas.
+- Interfaz bilingüe en castellano y valenciano.
 
-```bash
-npm install
-npm run dev
-```
+## Secciones
 
-## Build
+- Inicio
+- Nuestra causa
+- Proyectos
+  - Ranchi · India
+  - Que nadie pase frío
+  - Ropero solidario
+  - Cena del hambre
+  - Comercio justo
+  - Ferias solidarias
+- Colabora
+- Noticias
+- Contacto
+- Política de privacidad
 
-```bash
-npm run build
-```
+## Tecnologías utilizadas
 
-## Subida estática a cdmon Microplan
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- Vercel Serverless Functions
+- Resend
 
-Puedes subir el contenido de la carpeta `dist/` al directorio público del hosting.
 
-Importante: el Microplan de cdmon sirve la web estática, pero no ejecuta PHP ni funciones serverless. Por tanto, el formulario no podrá enviar correos desde cdmon Microplan por sí solo.
+## Autor
 
-## Formulario con Resend
+Desarrollado por Pedro Pablo Millán Mompó.
 
-La función `api/contact.js` está preparada para desplegarse en un entorno serverless compatible, por ejemplo Vercel.
+Portfolio: [pedromillan.dev](https://pedromillan.dev)
 
-Variables de entorno necesarias:
+---
 
-```bash
-RESEND_API_KEY=tu_api_key_de_resend
-CONTACT_TO_EMAIL=correo_destino@dominio.com
-RESEND_FROM_EMAIL=Cáritas Banyeres <onboarding@resend.dev>
-```
+# Cáritas Parroquial Banyeres de Mariola
 
-Cuando uses un dominio verificado en Resend, cambia `RESEND_FROM_EMAIL` por una dirección del dominio verificado.
+Institutional website developed for Cáritas Parroquial Banyeres de Mariola, designed to present its charitable projects, community activities, news and collaboration options in a clear, warm and visual way.
 
-## Notas
+The website includes information about Cáritas’ local support work, the solidarity clothing service, aid campaigns, fair trade initiatives, solidarity fairs and the support project in Ranchi, India.
 
-- No hay ruta `/admin`.
-- No hay `public/api/contact.php` ni `public/api/admin.php`.
-- Las nuevas actualizaciones de contenido deben hacerse editando el código, ejecutando `npm run build` y subiendo de nuevo el contenido de `dist/`.
+## Main features
+
+- Fully responsive design for desktop, tablet and mobile.
+- Clear navigation across institutional sections.
+- Individual pages for solidarity projects.
+- News and activities section.
+- Contact form.
+- Visual layout with hero images, parallax sections and organic wave-based compositions.
+- Bilingual interface in Spanish and Valencian.
+
+## Sections
+
+- Home
+- Our cause
+- Projects
+  - Ranchi · India
+  - No one should be cold
+  - Solidarity clothing service
+  - Hunger dinner
+  - Fair trade
+  - Solidarity fairs
+- Collaborate
+- News
+- Contact
+- Privacy policy
+
+## Tech stack
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- Vercel Serverless Functions
+- Resend
+
+
+## Author
+
+Developed by Pedro Pablo Millán Mompó.
+
+Portfolio: [pedromillan.dev](https://pedromillan.dev)
