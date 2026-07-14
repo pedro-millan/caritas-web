@@ -26,7 +26,7 @@ export default function Page({ page, type, lang }) {
       homeContactText: 'Escríbenos de forma directa. El mensaje llegará al correo de Cáritas Banyeres y se usará únicamente para responder a tu solicitud.'
     },
     va: {
-      what: 'Què fem',
+
       whatText: 'Càritas Banyeres acompanya realitats concretes des de la discreció, la proximitat i el respecte. Cada acció busca cuidar la dignitat de les persones i enfortir el teixit comunitari. Oferim:',
       mainProjects: 'Projectes destacats',
       collaborateTitle: 'Formes de col·laborar',
@@ -59,7 +59,7 @@ export default function Page({ page, type, lang }) {
 function HomeContent({ t, lang }) {
   return (
     <>
-      <SectionBlock eyebrow="Conócenos" title={t.what}>
+      <SectionBlock eyebrow={lang === 'es' ? 'Conócenos' : 'Coneix-nos'} title={t.what}>
         <p className="lead centered">{t.whatText}</p>
         <div className="highlight-grid home-highlight-grid">
           {highlights.map((item, index) => (
