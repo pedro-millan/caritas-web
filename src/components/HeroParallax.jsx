@@ -4,7 +4,8 @@ import { useRef } from 'react';
 export default function HeroParallax({ page, lang }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '28%']);
+  const isContact = page.path === '/contacto';
+  const y = useTransform(scrollYProgress, [0, 1], isContact ? ['18%', '46%'] : ['0%', '28%']);
   const scale = useTransform(scrollYProgress, [0, 1], [1.05, 1.18]);
 
   return (

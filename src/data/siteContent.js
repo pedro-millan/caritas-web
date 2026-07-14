@@ -76,7 +76,7 @@ export const pages = {
   },
   privacy: {
     path: '/politica-de-privacidad',
-    hero: '/assets/hero-contacto(1).webp',
+    hero: '/assets/privacidad.webp',
     title: { es: 'Política de Privacidad', va: 'Política de Privacitat' },
     intro: {
       es: 'Tratamos la información de contacto con discreción y únicamente para responder a la solicitud recibida.',

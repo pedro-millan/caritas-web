@@ -27,14 +27,19 @@ export default async function handler(req, res) {
   }
 
   const html = `
-    <h2>Nuevo mensaje desde la web de Cáritas Banyeres</h2>
-    <p><strong>Nombre:</strong> ${escapeHtml(name)}</p>
-    <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-    <p><strong>Teléfono:</strong> ${escapeHtml(phone || 'No indicado')}</p>
-    <p><strong>Asunto:</strong> ${escapeHtml(subject)}</p>
-    <p><strong>Mensaje:</strong></p>
-    <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
-  `;
+  <h2>Nuevo mensaje desde la web de Cáritas Banyeres</h2>
+  <p><strong>Nombre:</strong> ${escapeHtml(name)}</p>
+  <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+  <p><strong>Teléfono:</strong> ${escapeHtml(phone || 'No indicado')}</p>
+  <p><strong>Asunto:</strong> ${escapeHtml(subject)}</p>
+  <p><strong>Mensaje:</strong></p>
+  <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
+
+  <hr style="border:none;border-top:1px solid #ddd;margin:24px 0;" />
+  <p style="font-size:12px;color:#666;">
+    Este mensaje se ha enviado desde el formulario oficial de caritasbanyeres.com.
+  </p>
+`;
 
   const resendResponse = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -46,7 +51,7 @@ export default async function handler(req, res) {
       from: fromEmail,
       to: [toEmail],
       reply_to: email,
-      subject: `Cáritas Banyeres · ${subject}`,
+      subject: `Mensaje recibido desde Cáritas Banyeres: ${subject}`,
       html
     })
   });
