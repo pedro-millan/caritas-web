@@ -205,6 +205,36 @@ function NewsContent({ t, lang }) {
   );
 }
 
+function InfoCollage({ blocks, lang, withButton = false }) {
+  return (
+    <section className="info-collage">
+      {blocks.map((block, index) => (
+        <motion.article
+          className={`info-row ${index % 2 === 1 ? 'reverse' : ''}`}
+          key={block.title.es}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: .55, ease: 'easeOut' }}
+        >
+          <div className="info-image-wrap">
+            <img src={block.image} alt={block.title[lang]} loading="lazy" />
+          </div>
+          <div className="info-text-wrap">
+            <h2>{block.title[lang]}</h2>
+            <p>{block.text[lang]}</p>
+            {withButton && (
+              <Link to="/contacto" className="button-primary info-button">
+                {lang === 'es' ? 'Participa' : 'Participa'} <ArrowRight size={17} />
+              </Link>
+            )}
+          </div>
+        </motion.article>
+      ))}
+    </section>
+  );
+}
+
 function ProjectCards({ title, lang }) {
   return (
     <section className="project-card-section">
