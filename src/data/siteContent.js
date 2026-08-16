@@ -313,7 +313,23 @@ export const newsItems = [
       es: 'Banyeres de Mariola vuelve a celebrar su feria tradicional con artesanía, cultura popular y un espacio solidario en el que Cáritas estará presente.',
       va: 'Banyeres de Mariola torna a celebrar la seua fira tradicional amb artesania, cultura popular i un espai solidari en què Càritas estarà present.'
     }
+  },
+
+  {
+    slug: 'ganadores-rifa-santa-maria-magdalena',
+    path: '/noticias/ganadores-rifa-santa-maria-magdalena',
+    title: {
+      es: 'Ganadores de la rifa por motivo de la festividad en honor a Santa María Magdalena',
+      va: 'Guanyadors de la rifa per motiu de la festivitat en honor a Santa María Magdalena'
+    },
+    date: { es: '16 de agosto', va: '16 d´agost' },
+    cover: '/assets/rifa2.webp',
+    text: {
+      es: 'Conoce a los tres afortunados que se llevaron premios de la rifa.',
+      va: 'Coneix als tres afortunats que es van emportar premis de la rifa.'
+    }
   }
+
 ];
 
 export const newsPages = [
@@ -358,7 +374,51 @@ export const newsPages = [
         }
       }
     ]
+  },
+
+  {
+    slug: 'ganadores-rifa-santa-maria-magdalena',
+    hero: '/assets/rifa2.webp',
+    title: {
+      es: '¡Enhorabuena a los afortunados!',
+      va: 'Enhorabona als afortunats!'
+    },
+    eyebrow: { es: 'Noticias · Banyeres de Mariola', va: 'Notícies · Banyeres de Mariola' },
+    intro: {
+      es: 'Conoce a los tres afortunados que se llevaron premios de la rifa.',
+      va: 'Coneix als tres afortunats que es van emportar premis de la rifa.'
+    },
+    blocks: [
+      {
+        image: '/assets/premio1.webp',
+        alt: { es: 'Ganadores del primer premio de la rifa.', va: 'Guanyadors del primer premi de la rifa.' },
+        title: { es: '1er premio', va: '1er premi' },
+        text: {
+          es: 'La afortunada que se llevó el primer premio, correspondiente a la papeleta nº 264 y que consta de un jamón serrano y un surtido de embutidos ibéricos de primera calidad, fue Mª Angeles Domenech.',
+          va: 'L´afortunada que es va emportar el primer premi, corresponent a la papeleta nº 264 y que consta d´ un pernil serrà i un assortiment d´embotits ibèrics de primera qualitat, va ser Mª Angeles Domenech.'
+        }
+      },
+      {
+        image: '/assets/premio2.webp',
+        alt: { es: 'Ganadores del segundo premio de la rifa.', va: 'Guanyadors del segón premi de la rifa.' },
+        title: { es: '2do premio', va: '2n premi' },
+        text: {
+          es: 'El segundo premio, una pintura realizada por el pintor local Pedro Millán, fue para Mª Jesús Belda y Raúl Puerto con la papeleta nº 29.',
+          va: 'El segón premi, una pintura realitzada per el pintor local Pedro Millán, va ser per a Mª Jesús Belda i Raúl Puerto amb la papeleta nº 29.'
+        }
+      },
+      {
+        image: '/assets/premio3.webp',
+        alt: { es: 'Ganadora del tercer premio de la rifa.', va: 'Guanyadora del tercer premi de la rifa.' },
+        title: { es: '3er premio', va: '3er premi' },
+        text: {
+          es: 'Con la papeleta nº 55, la cesta con fruta fresca natural fue para Isabel Vañó.',
+          va: 'Amb la papeleta nº 55, la cistella amb fruita fresca natural va ser per a Isabel Vañó.'
+        }
+      }
+    ]
   }
+
 ];
 
 export const contactInfo = {

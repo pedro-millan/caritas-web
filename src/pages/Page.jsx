@@ -4,7 +4,7 @@ import { ArrowRight, Gift, HandHeart, Leaf, Shirt, Soup, UsersRound } from 'luci
 import HeroParallax from '../components/HeroParallax.jsx';
 import SectionBlock from '../components/SectionBlock.jsx';
 import ContactForm from '../components/ContactForm.jsx';
-import { causeBlocks, collaborateBlocks, highlights, projectPages, newsPages } from '../data/siteContent.js';
+import { causeBlocks, collaborateBlocks, highlights, projectPages, newsItems } from '../data/siteContent.js';
 
 const projectIcons = [Leaf, Soup, Shirt, Gift, HandHeart, UsersRound];
 
@@ -179,7 +179,7 @@ function NewsContent({ t, lang }) {
       </SectionBlock>
       <section className="news-card-section">
         <div className="event-card-grid news-card-grid">
-          {newsPages.map((item) => (
+          {newsItems.map((item) => (
             <motion.article
               className="event-card news-entry-card"
               key={item.slug}
@@ -189,11 +189,11 @@ function NewsContent({ t, lang }) {
               transition={{ duration: 0.55 }}
             >
               <Link to={`/noticias/${item.slug}`}>
-                <img src={item.cover || item.hero} alt={item.title[lang]} loading="lazy" />
+                <img src={item.cover} alt={item.title[lang]} loading="lazy" />
                 <div>
-                  <span>{item.eyebrow?.[lang]}</span>
+                  <span>{item.date?.[lang]}</span>
                   <h3>{item.title[lang]}</h3>
-                  <p>{item.intro?.[lang]}</p>
+                  <p>{item.text?.[lang]}</p>
                   <strong>{lang === 'es' ? 'Leer noticia' : 'Llegir notícia'} <ArrowRight size={17} /></strong>
                 </div>
               </Link>
