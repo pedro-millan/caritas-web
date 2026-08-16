@@ -4,8 +4,8 @@ import { useRef } from 'react';
 export default function HeroParallax({ page, lang }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
-  const isContact = page.path === '/contacto';
-  const y = useTransform(scrollYProgress, [0, 1], isContact ? ['18%', '46%'] : ['0%', '28%']);
+  const pushDown = page.path === '/contacto' || page.slug === 'ganadores-rifa-santa-maria-magdalena';
+  const y = useTransform(scrollYProgress, [0, 1], pushDown ? ['18%', '46%'] : ['0%', '28%']);
   const scale = useTransform(scrollYProgress, [0, 1], [1.05, 1.18]);
 
   return (
