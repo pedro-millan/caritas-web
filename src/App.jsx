@@ -29,7 +29,7 @@ export default function App() {
 
   useEffect(() => {
     localStorage.setItem('caritas-lang', lang);
-    document.documentElement.lang = lang === 'va' ? 'ca-valencia' : 'es';
+    document.documentElement.lang = { es: 'es', va: 'ca-valencia', ur: 'ur', en: 'en' }[lang] || 'es';
   }, [lang]);
 
   return (

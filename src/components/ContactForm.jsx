@@ -32,6 +32,34 @@ export default function ContactForm({ lang = 'es', compact = false }) {
       error: 'No s’ha pogut enviar el missatge. Torna-ho a intentar o escriu directament al correu.',
       direct: 'Contacte directe',
       directText: 'També pots contactar directament al telèfon'
+    },
+    ur: {
+      name: 'نام',
+      email: 'ای میل',
+      phone: 'فون',
+      subject: 'موضوع',
+      message: 'پیغام',
+      privacy: 'میں اجازت دیتا/دیتی ہوں کہ کاریتاس بانیریس یہ معلومات صرف میری درخواست کا جواب دینے کے لیے استعمال کرے۔',
+      send: 'پیغام بھیجیں',
+      sending: 'بھیجا جا رہا ہے...',
+      ok: 'پیغام کامیابی سے بھیج دیا گیا۔ رابطہ کرنے کا شکریہ۔',
+      error: 'پیغام نہیں بھیجا جا سکا۔ دوبارہ کوشش کریں یا براہ راست ای میل پر لکھیں۔',
+      direct: 'براہ راست رابطہ',
+      directText: 'آپ اس فون نمبر پر بھی براہ راست رابطہ کر سکتے ہیں'
+    },
+    en: {
+      name: 'Name',
+      email: 'Email',
+      phone: 'Phone',
+      subject: 'Subject',
+      message: 'Message',
+      privacy: 'I agree that Cáritas Banyeres will use this information only to respond to my enquiry.',
+      send: 'Send message',
+      sending: 'Sending...',
+      ok: 'Message sent successfully. Thank you for reaching out.',
+      error: 'The message could not be sent. Please try again or email us directly.',
+      direct: 'Direct contact',
+      directText: 'You can also contact us directly by phone'
     }
   }[lang];
 

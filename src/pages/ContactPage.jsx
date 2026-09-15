@@ -5,8 +5,10 @@ import { contactInfo } from '../data/siteContent.js';
 
 export default function ContactPage({ page, lang }) {
   const t = {
-    es: { title: 'Escríbenos' },
-    va: { title: 'Escriu-nos' }
+    es: { title: 'Escríbenos', contactDirect: 'Contacto directo' },
+    va: { title: 'Escriu-nos', contactDirect: 'Contacte directe' },
+    ur: { title: 'ہمیں لکھیں', contactDirect: 'براہ راست رابطہ' },
+    en: { title: 'Write to us', contactDirect: 'Direct contact' }
   }[lang];
 
   return (
@@ -17,7 +19,7 @@ export default function ContactPage({ page, lang }) {
           <ContactForm lang={lang} />
         </SectionBlock>
         <aside className="contact-card">
-          <h2>{lang === 'es' ? 'Contacto directo' : 'Contacte directe'}</h2>
+          <h2>{t.contactDirect}</h2>
         
           <a href={`tel:${contactInfo.phoneRaw}`}>{contactInfo.phone}</a>
           <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>

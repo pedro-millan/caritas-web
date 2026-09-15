@@ -5,7 +5,9 @@ import { contactInfo, navItems } from '../data/siteContent.js';
 export default function Footer({ lang }) {
   const labels = {
     es: { privacy: 'Política de Privacidad' },
-    va: { privacy: 'Política de Privacitat' }
+    va: { privacy: 'Política de Privacitat' },
+    ur: { privacy: 'رازداری کی پالیسی' },
+    en: { privacy: 'Privacy Policy' }
   };
   const projectItem = navItems.find((item) => item.children);
   const normalItems = navItems.filter((item) => !item.children);

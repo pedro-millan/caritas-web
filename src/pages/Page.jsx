@@ -26,7 +26,7 @@ export default function Page({ page, type, lang }) {
       homeContactText: 'Escríbenos de forma directa. El mensaje llegará al correo de Cáritas Banyeres y se usará únicamente para responder a tu solicitud.'
     },
     va: {
-
+      what: '',
       whatText: 'Càritas Banyeres acompanya realitats concretes des de la discreció, la proximitat i el respecte. Cada acció busca cuidar la dignitat de les persones i enfortir el teixit comunitari. Oferim:',
       mainProjects: 'Projectes destacats',
       collaborateTitle: 'Formes de col·laborar',
@@ -39,6 +39,36 @@ export default function Page({ page, type, lang }) {
       causeText: 'L’acompanyament social no es limita a resoldre una urgència. També implica mirar la persona completa, comprendre el seu context i caminar al seu costat amb respecte.',
       homeContactTitle: 'Necessites ajuda o vols col·laborar?',
       homeContactText: 'Escriu-nos de forma directa. El missatge arribarà al correu de Càritas Banyeres i s’usarà únicament per a respondre a la teua sol·licitud.'
+    },
+    ur: {
+      what: '',
+      whatText: 'ہم راز داری، قربت اور احترام کے ساتھ حقیقی حالات میں لوگوں کا ساتھ دیتے ہیں۔ ہر قدم کا مقصد لوگوں کے وقار کا خیال رکھنا اور کمیونٹی کے تانے بانے کو مضبوط بنانا ہے۔ ہم فراہم کرتے ہیں:',
+      mainProjects: 'نمایاں منصوبے',
+      collaborateTitle: 'تعاون کرنے کے طریقے',
+      collaborateText: 'ہر مدد اہمیت رکھتی ہے: کھانے کا ایک تھیلا، ایک مفید لباس، رضاکارانہ کام کے چند گھنٹے یا اپنے حلقے میں کسی مہم کا اشتراک۔',
+      readMore: 'مزید جانیں',
+      newsTitle: 'تازہ ترین خبریں',
+      contactCTA: 'کاریتاس بانیریس سے رابطہ کریں',
+      projectIntro: 'کاریتاس بانیریس کے اہم اقدامات دریافت کریں۔',
+      causeTitle: 'ایسی مدد جو سننے سے شروع ہوتی ہے',
+      causeText: 'سماجی مدد صرف کسی مشکل وقت کو حل کرنے تک محدود نہیں، بلکہ اس میں انسان کو مکمل طور پر دیکھنا، اس کے حالات کو سمجھنا اور احترام کے ساتھ اس کے ساتھ چلنا بھی شامل ہے۔ ہم چاہتے ہیں کہ کوئی بھی شخص ضرورت کے وقت خود کو تنہا محسوس نہ کرے۔ مادی مدد اہم ہے، لیکن یہ ہمیشہ استقبال، رہنمائی اور انسانی ساتھ کے ساتھ ہوتی ہے۔',
+      homeContactTitle: 'کیا آپ کو مدد کی ضرورت ہے یا آپ تعاون کرنا چاہتے ہیں؟',
+      homeContactText: 'ہمیں براہ راست لکھیں۔ پیغام کاریتاس بانیریس کے ای میل پر پہنچے گا اور صرف آپ کی درخواست کا جواب دینے کے لیے استعمال ہوگا۔'
+    },
+    en: {
+      what: '',
+      whatText: 'We stand alongside real, everyday situations with discretion, closeness and respect. Every action aims to care for people’s dignity and strengthen the community fabric. We offer:',
+      mainProjects: 'Featured projects',
+      collaborateTitle: 'Ways to get involved',
+      collaborateText: 'Every bit of help counts: a bag of food, a useful piece of clothing, a few hours of volunteering, or sharing a campaign with people around you.',
+      readMore: 'Find out more',
+      newsTitle: 'Latest news',
+      contactCTA: 'Contact Cáritas Banyeres',
+      projectIntro: 'Explore the main initiatives run by Cáritas Banyeres.',
+      causeTitle: 'Help that starts by listening',
+      causeText: 'Social support isn’t just about solving an urgent need — it also means seeing the whole person, understanding their situation, and walking alongside them with respect. We work so that no one feels alone when facing hardship. Material help matters, but it always goes hand in hand with welcome, guidance and human support.',
+      homeContactTitle: 'Need help or want to get involved?',
+      homeContactText: 'Write to us directly. Your message will reach the Cáritas Banyeres inbox and will only be used to respond to your request.'
     }
   }[lang];
 
@@ -59,7 +89,7 @@ export default function Page({ page, type, lang }) {
 function HomeContent({ t, lang }) {
   return (
     <>
-      <SectionBlock eyebrow={lang === 'es' ? 'Conócenos' : 'Coneix-nos'} title={t.what}>
+      <SectionBlock eyebrow={{ es: 'Conócenos', va: 'Coneix-nos', ur: 'ہمیں جانیں', en: 'Get to know us' }[lang]} title={t.what}>
         <p className="lead centered">{t.whatText}</p>
         <div className="highlight-grid home-highlight-grid">
           {highlights.map((item, index) => (
@@ -86,7 +116,7 @@ function HomeContent({ t, lang }) {
 
       <section className="home-contact-section" id="contacto-home">
         <div className="home-contact-copy">
-          <span className="section-eyebrow">{lang === 'es' ? 'Contacto directo' : 'Contacte directe'}</span>
+          <span className="section-eyebrow">{{ es: 'Contacto directo', va: 'Contacte directe', ur: 'براہ راست رابطہ', en: 'Direct contact' }[lang]}</span>
           <h2>{t.homeContactTitle}</h2>
           <p>{t.homeContactText}</p>
         </div>
@@ -98,7 +128,7 @@ function HomeContent({ t, lang }) {
 
 function CauseContent({ t, lang }) {
   const causeStory = {
-    intro: { es: t.causeText, va: t.causeText },
+    intro: { [lang]: t.causeText },
     blocks: causeBlocks.map((block) => ({
       image: block.image,
       title: block.title,
@@ -175,7 +205,7 @@ function NewsContent({ t, lang }) {
   return (
     <>
       <SectionBlock title={t.newsTitle}>
-        <p className="lead centered">{lang === 'es' ? 'Actualidad, campañas, actividades solidarias y vida comunitaria de Cáritas Banyeres.' : 'Actualitat, campanyes, activitats solidàries i vida comunitària de Càritas Banyeres.'}</p>
+        <p className="lead centered">{{ es: 'Actualidad, campañas, actividades solidarias y vida comunitaria de Cáritas Banyeres.', va: 'Actualitat, campanyes, activitats solidàries i vida comunitària de Càritas Banyeres.', ur: 'کاریتاس بانیریس کی تازہ خبریں، مہمات، یکجہتی کی سرگرمیاں اور کمیونٹی زندگی۔', en: 'News, campaigns, solidarity activities and community life from Cáritas Banyeres.' }[lang]}</p>
       </SectionBlock>
       <section className="news-card-section">
         <div className="event-card-grid news-card-grid">
@@ -194,7 +224,7 @@ function NewsContent({ t, lang }) {
                   <span>{item.date?.[lang]}</span>
                   <h3>{item.title[lang]}</h3>
                   <p>{item.text?.[lang]}</p>
-                  <strong>{lang === 'es' ? 'Leer noticia' : 'Llegir notícia'} <ArrowRight size={17} /></strong>
+                  <strong>{{ es: 'Leer noticia', va: 'Llegir notícia', ur: 'خبر پڑھیں', en: 'Read news' }[lang]} <ArrowRight size={17} /></strong>
                 </div>
               </Link>
             </motion.article>
@@ -225,7 +255,7 @@ function InfoCollage({ blocks, lang, withButton = false }) {
             <p>{block.text[lang]}</p>
             {withButton && (
               <Link to="/contacto" className="button-primary info-button">
-                {lang === 'es' ? 'Participa' : 'Participa'} <ArrowRight size={17} />
+                {{ es: 'Participa', va: 'Participa', ur: 'شامل ہوں', en: 'Get involved' }[lang]} <ArrowRight size={17} />
               </Link>
             )}
           </div>
@@ -249,7 +279,7 @@ function ProjectCards({ title, lang }) {
                 <Icon size={24} />
                 <h3>{project.title[lang]}</h3>
                 <p>{project.intro[lang]}</p>
-                <Link to={`/proyectos/${project.slug}`}>{lang === 'es' ? 'Entrar en el proyecto' : 'Entrar en el projecte'} <ArrowRight size={15} /></Link>
+                <Link to={`/proyectos/${project.slug}`}>{{ es: 'Entrar en el proyecto', va: 'Entrar en el projecte', ur: 'منصوبہ دیکھیں', en: 'Go to project' }[lang]} <ArrowRight size={15} /></Link>
               </div>
             </motion.article>
           );

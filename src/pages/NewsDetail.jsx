@@ -11,7 +11,7 @@ export default function NewsDetail({ news, lang }) {
       <HeroParallax page={news} lang={lang} />
       <div className="page-shell news-detail-shell">
         <Link to="/noticias" className="back-link news-back-link">
-          <ArrowLeft size={16} /> {lang === 'es' ? 'Volver a noticias' : 'Tornar a notícies'}
+          <ArrowLeft size={16} /> {{ es: 'Volver a noticias', va: 'Tornar a notícies', ur: 'خبروں پر واپس جائیں', en: 'Back to news' }[lang]}
         </Link>
 
         {blocks.map((block, index) => (

@@ -91,9 +91,9 @@ h1, h2, h3, .page-hero p, .lead { font-family: 'Lora Local', Georgia, serif; fon
 .dropdown-project-link:hover, .dropdown-project-link.active { background: var(--rose-2); color: var(--red-dark); transform: translateX(3px); }
 
 .header-actions { display: flex; align-items: center; gap: 10px; }
-.lang-switch { border: 1px solid rgba(211,31,50,.22); background: white; border-radius: 999px; display: inline-flex; padding: 4px; gap: 3px; cursor: pointer; box-shadow: 0 8px 26px rgba(211,31,50,.08); }
-.lang-switch span { padding: 7px 9px; border-radius: 999px; font-size: .78rem; font-weight: 850; color: var(--muted); }
-.lang-switch span.active { background: var(--red); color: #fff; }
+.lang-switch { border: 1px solid rgba(211,31,50,.22); background: white; border-radius: 999px; display: inline-flex; padding: 4px; gap: 3px; box-shadow: 0 8px 26px rgba(211,31,50,.08); }
+.lang-switch button { border: 0; background: none; padding: 7px 9px; border-radius: 999px; font-size: .78rem; font-weight: 850; color: var(--muted); cursor: pointer; }
+.lang-switch button.active { background: var(--red); color: #fff; }
 .menu-button { display: none; border: 0; background: var(--rose-2); color: var(--red-dark); border-radius: 16px; padding: 10px; cursor: pointer; }
 .mobile-panel { position: fixed; top: 96px; left: 14px; right: 14px; background: rgba(255,255,255,.98); border: 1px solid rgba(211,31,50,.13); border-radius: 24px; padding: 14px; box-shadow: var(--shadow); display: none; }
 .mobile-nav-link { width: 100%; display: flex; align-items: center; justify-content: space-between; border: 0; background: transparent; padding: 13px 10px; color: var(--ink); font-weight: 800; border-radius: 14px; }
@@ -216,7 +216,7 @@ h1, h2, h3, .page-hero p, .lead { font-family: 'Lora Local', Georgia, serif; fon
   .brand { height: 56px; min-width: 120px; }
   .brand img { width: 136px; max-height: 50px; }
   .mobile-panel { top: 78px; }
-  .lang-switch span { padding: 6px 7px; }
+  .lang-switch button { padding: 6px 6px; font-size: .72rem; }
   .page-hero { min-height: 520px; height: 68vh; margin-bottom: 44px; }
   .page-hero-content { margin-top: 70px; }
   .page-hero h1 { font-size: clamp(2.45rem, 14vw, 4.2rem); }

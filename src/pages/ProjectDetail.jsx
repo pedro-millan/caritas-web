@@ -19,7 +19,7 @@ function EventCards({ project, lang }) {
         viewport={{ once: true, amount: 0.35 }}
         transition={{ duration: 0.55 }}
       >
-        <p>{lang === 'es' ? 'Memorias de cada edición:' : 'Memòries de cada edició:'}</p>
+        <p>{{ es: 'Memorias de cada edición:', va: 'Memòries de cada edició:', ur: 'ہر ایڈیشن کی یادیں:', en: 'Highlights from each edition:' }[lang]}</p>
       </motion.div>
       <div className="event-card-grid">
         {events.map((event) => (
@@ -37,7 +37,7 @@ function EventCards({ project, lang }) {
                 <span>{event.eyebrow[lang]}</span>
                 <h3>{event.title[lang]}</h3>
                 <p>{event.summary[lang]}</p>
-                <strong>{lang === 'es' ? 'Ver memoria' : 'Veure memòria'} <ArrowRight size={17} /></strong>
+                <strong>{{ es: 'Ver memoria', va: 'Veure memòria', ur: 'یادیں دیکھیں', en: 'View highlights' }[lang]} <ArrowRight size={17} /></strong>
               </div>
             </Link>
           </motion.article>
@@ -203,7 +203,7 @@ export default function ProjectDetail({ project, lang }) {
     <>
       <HeroParallax page={project} lang={lang} />
       <div className={`page-shell narrow project-detail-page project-detail-${project.slug}`}>
-        <Link to="/proyectos" className="back-link"><ArrowLeft size={16} /> {lang === 'es' ? 'Volver a proyectos' : 'Tornar a projectes'}</Link>
+        <Link to="/proyectos" className="back-link"><ArrowLeft size={16} /> {{ es: 'Volver a proyectos', va: 'Tornar a projectes', ur: 'منصوبوں پر واپس جائیں', en: 'Back to projects' }[lang]}</Link>
 
         {!isColdProject && !isRanchiProject && bodyCopy}
 
@@ -212,8 +212,8 @@ export default function ProjectDetail({ project, lang }) {
         {isRanchiProject && bodyCopy}
 
         <section className="cta-band soft">
-          <p>{lang === 'es' ? 'Cada iniciativa se sostiene gracias a la colaboración de muchas personas.' : 'Cada iniciativa se sosté gràcies a la col·laboració de moltes persones.'}</p>
-          <Link to={`/proyectos/${next.slug}`} className="button-primary">{lang === 'es' ? 'Siguiente proyecto' : 'Projecte següent'}<ArrowRight size={18} /></Link>
+          <p>{{ es: 'Cada iniciativa se sostiene gracias a la colaboración de muchas personas.', va: 'Cada iniciativa se sosté gràcies a la col·laboració de moltes persones.', ur: 'ہر پہل بہت سے لوگوں کے تعاون کی بدولت قائم ہے۔', en: 'Every initiative is sustained thanks to the collaboration of many people.' }[lang]}</p>
+          <Link to={`/proyectos/${next.slug}`} className="button-primary">{{ es: 'Siguiente proyecto', va: 'Projecte següent', ur: 'اگلا منصوبہ', en: 'Next project' }[lang]}<ArrowRight size={18} /></Link>
         </section>
       </div>
     </>
