@@ -211,7 +211,7 @@ function NewsContent({ t, lang }) {
         <div className="event-card-grid news-card-grid">
           {newsItems.map((item) => (
             <motion.article
-              className="event-card news-entry-card"
+              className={`event-card news-entry-card ${item.slug === 'sopar-de-la-fam-2026' ? 'news-entry-sopar' : ''}`}
               key={item.slug}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}

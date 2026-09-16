@@ -9,7 +9,7 @@ export default function HeroParallax({ page, lang }) {
   const scale = useTransform(scrollYProgress, [0, 1], [1.05, 1.18]);
 
   return (
-    <section className={`page-hero ${page.path?.includes('ranchi-india') || page.title?.es?.includes('Ranchi') ? 'page-hero-ranchi' : ''}`} ref={ref}>
+    <section className={`page-hero ${page.path?.includes('ranchi-india') || page.title?.es?.includes('Ranchi') ? 'page-hero-ranchi' : ''} ${page.slug === 'sopar-de-la-fam-2026' ? 'page-hero-sopar' : ''}`} ref={ref}>
       <motion.img className="page-hero-img" src={page.hero} alt="" style={{ y, scale }} />
       <div className="hero-overlay" />
       <motion.div className="page-hero-content" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

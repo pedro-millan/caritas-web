@@ -420,6 +420,25 @@ export const newsItems = [
       ur: 'ان تین خوش قسمت افراد کو جانیں جنہوں نے لاٹری کے انعامات جیتے۔',
       en: 'Meet the three lucky winners who took home raffle prizes.'
     }
+  },
+
+  {
+    slug: 'sopar-de-la-fam-2026',
+    path: '/noticias/sopar-de-la-fam-2026',
+    title: {
+      es: 'Sopar de la Fam 2026',
+      va: 'Sopar de la Fam 2026',
+      ur: 'سوپار دے لا فام 2026',
+      en: 'Sopar de la Fam 2026'
+    },
+    date: { es: '18 de septiembre', va: '18 de setembre', ur: '18 ستمبر', en: 'September 18' },
+    cover: '/assets/sopar-2026.webp',
+    text: {
+      es: 'El próximo viernes 18 de septiembre celebramos el Sopar de la Fam 2026 en el Maset dels Maseros, a beneficio de los proyectos de Tere Ferre en Ranchi.',
+      va: 'El pròxim divendres 18 de setembre celebrem el Sopar de la Fam 2026 al Maset dels Maseros, a benefici dels projectes de Tere Ferre a Ranchi.',
+      ur: 'اگلے جمعہ، 18 ستمبر کو ہم ماسیت دیلس ماسیروس میں سوپار دے لا فام 2026 منا رہے ہیں، جس کے فوائد رانچی میں تیرے فیرے کے منصوبوں کی مدد کے لیے جائیں گے۔',
+      en: 'Next Friday, September 18, we’re holding Sopar de la Fam 2026 at Maset dels Maseros, in support of Tere Ferre’s projects in Ranchi.'
+    }
   }
 
 ];
@@ -526,6 +545,43 @@ export const newsPages = [
           va: 'Amb la papeleta nº 55, la cistella amb fruita fresca natural va ser per a Isabel Vañó.',
           ur: 'ٹکٹ نمبر 55 کے ساتھ، تازہ قدرتی پھلوں کی ٹوکری ازابیل وانیو کو ملی۔',
           en: 'With ticket no. 55, the basket of fresh natural fruit went to Isabel Vañó.'
+        }
+      }
+    ]
+  },
+
+  {
+    slug: 'sopar-de-la-fam-2026',
+    hero: '/assets/sopar-2026.webp',
+    title: {
+      es: '¡Únete al Sopar de la Fam 2026!',
+      va: 'Uneix-te al Sopar de la Fam 2026!',
+      ur: 'سوپار دے لا فام 2026 میں شامل ہوں!',
+      en: 'Join us for Sopar de la Fam 2026!'
+    },
+    eyebrow: { es: 'Noticias · Banyeres de Mariola', va: 'Notícies · Banyeres de Mariola', ur: 'خبریں · بانیریس دے مریولا', en: 'News · Banyeres de Mariola' },
+    intro: {},
+    blocks: [
+      {
+        image: '/assets/sopar-2026.webp',
+        alt: { es: 'Cartel del Sopar de la Fam 2026.', va: 'Cartell del Sopar de la Fam 2026.', ur: 'سوپار دے لا فام 2026 کا پوسٹر۔', en: 'Sopar de la Fam 2026 poster.' },
+        title: { es: 'Cuándo y dónde', va: 'Quan i on', ur: 'کب اور کہاں', en: 'When and where' },
+        text: {
+          es: 'Como cada año, celebramos nuestro clásico Sopar de la Fam y este año se celebrará el viernes 18 de septiembre a las 21:00 en el Maset dels Maseros. Una velada donde, como siempre, se expondrán de manera cercana diferentes actividades y acciones de ayuda en las que Cáritas Banyeres está inmersa actualmente.\n\nAdemás, una cena humilde con fruta, pan y aceite amenizará la ocasión como viene siendo costumbre.',
+          va: 'Com cada any, celebrem el nostre clàssic Sopar de la Fam i enguany se celebrarà el divendres 18 de setembre a les 21:00 al Maset dels Maseros. Una vetlada on, com sempre, s’exposaran de forma pròxima diferents activitats i accions d’ajuda en què Càritas Banyeres està immersa actualment.\n\nA més, un sopar humil amb fruita, pa i oli amenitzarà l’ocasió com és costum.',
+          ur: 'ہر سال کی طرح، ہم اپنا روایتی سوپار دے لا فام مناتے ہیں، اور اس سال یہ جمعہ، 18 ستمبر کو رات 21:00 بجے ماسیت دیلس ماسیروس میں منعقد ہوگا۔ ایک ایسی شام جس میں، ہمیشہ کی طرح، کاریتاس بانیریس کی مختلف موجودہ سرگرمیوں اور امدادی اقدامات کو قریبی انداز میں پیش کیا جائے گا۔\n\nاس کے علاوہ، پھل، روٹی اور تیل پر مشتمل ایک سادہ عشائیہ، جیسا کہ روایت رہی ہے، اس موقع کو مزید یادگار بنائے گا۔',
+          en: 'As every year, we’re celebrating our classic Sopar de la Fam, and this year it will take place on Friday, September 18 at 21:00 at Maset dels Maseros. An evening where, as always, we’ll share up close the different activities and support work Cáritas Banyeres is currently involved in.\n\nOn top of that, a humble dinner of fruit, bread and oil will accompany the occasion, as is tradition.'
+        }
+      },
+      {
+        image: '/assets/sopar-2026.webp',
+        alt: { es: 'Cartel del Sopar de la Fam 2026 con información de venta de tiquets.', va: 'Cartell del Sopar de la Fam 2026 amb informació de venda de tiquets.', ur: 'ٹکٹ کی فروخت کی معلومات کے ساتھ سوپار دے لا فام 2026 کا پوسٹر۔', en: 'Sopar de la Fam 2026 poster with ticket sale information.' },
+        title: { es: 'Tickets y beneficio', va: 'Tiquets i benefici', ur: 'ٹکٹ اور فائدہ', en: 'Tickets and beneficiary' },
+        text: {
+          es: 'Podéis adquirir vuestro tiquet en los Estancos de la localidad, Casa Abadía, Foto Vídeo Morenet y Viatges Euro-Tours. Todos los beneficios de la velada irán destinados a dar soporte a los proyectos que la misionera Tere Ferre lleva a cabo en Ranchi, India. ¡Os esperamos con ganas de compartir una gran noche!',
+          va: 'Podeu adquirir el vostre tiquet als Estancs de la localitat, Casa Abadia, Foto Vídeo Morenet i Viatges Euro-Tours. Tots els beneficis de la vetlada aniran destinats a donar suport als projectes que la missionera Tere Ferre du a terme a Ranchi, l’Índia. Vos esperem amb ganes de compartir una gran nit!',
+          ur: 'آپ اپنا ٹکٹ قصبے کے تمباکو فروشوں (Estancos)، کاسا آبادیا، فوٹو ویڈیو مورینیت اور ویاتخیس یورو-ٹورز سے حاصل کر سکتے ہیں۔ شام کے تمام فوائد مشنری تیرے فیرے کے رانچی، بھارت میں جاری منصوبوں کی مدد کے لیے استعمال ہوں گے۔ ہم آپ کے ساتھ ایک شاندار رات گزارنے کے منتظر ہیں!',
+          en: 'You can get your ticket at the local tobacco shops (Estancos), Casa Abadía, Foto Vídeo Morenet and Viatges Euro-Tours. All proceeds from the evening will go to support the projects missionary Tere Ferre runs in Ranchi, India. We hope you’ll join us for a great night!'
         }
       }
     ]
