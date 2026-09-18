@@ -29,6 +29,7 @@ export const pages = {
   home: {
     path: '/',
     hero: '/assets/hero-inicio.webp',
+    video: '/assets/intro-caritas.mp4',
     title: { es: 'Cáritas Parroquial Banyeres de Mariola', va: 'Càritas Parroquial Banyeres de Mariola', ur: 'کاریتاس پیریشیل بانیریس دے مریولا', en: 'Cáritas Parroquial Banyeres de Mariola' },
     intro: {
 
@@ -289,26 +290,6 @@ export const causeBlocks = [
     }
   },
   {
-    title: { es: 'Ropero solidario', va: 'Rober solidari', ur: 'یکجہتی لباس گھر', en: 'Solidarity clothing bank' },
-    image: '/assets/ropero-solidario.webp',
-    text: {
-      es: 'Clasificamos y preparamos ropa limpia y en buen estado para que llegue de forma digna a quienes la necesitan, atendiendo también a las necesidades de cada temporada.',
-      va: 'Classifiquem i preparem roba neta i en bon estat perquè arribe de forma digna a qui la necessita, atenent també les necessitats de cada temporada.',
-      ur: 'ہم صاف اور اچھی حالت میں کپڑوں کو ترتیب دیتے اور تیار کرتے ہیں تاکہ وہ باوقار طریقے سے ضرورت مندوں تک پہنچیں، ہر موسم کی ضروریات کا خیال رکھتے ہوئے۔',
-      en: 'We sort and prepare clean clothing in good condition so it reaches those who need it in a dignified way, also taking each season’s needs into account.'
-    }
-  },
-  {
-    title: { es: 'Campañas de alimentos', va: 'Campanyes d’aliments', ur: 'خوراک کی مہمات', en: 'Food campaigns' },
-    image: '/assets/campanas-de-alimentos.webp',
-    text: {
-      es: 'Las recogidas y repartos de alimentos permiten responder a necesidades básicas con productos útiles, cuidando siempre la organización y el seguimiento de cada caso.',
-      va: 'Les recollides i repartiments d’aliments permeten respondre a necessitats bàsiques amb productes útils, cuidant sempre l’organització i el seguiment de cada cas.',
-      ur: 'خوراک اکٹھا کرنے اور تقسیم کرنے سے مفید اشیاء کے ذریعے بنیادی ضروریات پوری کی جاتی ہیں، ہر معاملے کی تنظیم اور پیروی کا ہمیشہ خیال رکھتے ہوئے۔',
-      en: 'Food collections and distributions help meet basic needs with useful products, always taking care to organise and follow up on each case.'
-    }
-  },
-  {
     title: { es: 'Sensibilización comunitaria', va: 'Sensibilització comunitària', ur: 'کمیونٹی آگاہی', en: 'Community awareness' },
     image: '/assets/sensibilizacion-comunitaria.webp',
     text: {
@@ -319,23 +300,14 @@ export const causeBlocks = [
     }
   },
   {
-    title: { es: 'Cooperación y comercio justo', va: 'Cooperació i comerç just', ur: 'تعاون اور منصفانہ تجارت', en: 'Cooperation and fair trade' },
-    image: '/assets/cooperacion-y-comerciojusto.webp',
-    text: {
-      es: 'Impulsamos una solidaridad que mira más allá de lo inmediato: cooperación, consumo responsable y apoyo a proyectos donde la dignidad de las personas está en el centro.',
-      va: 'Impulsem una solidaritat que mira més enllà de l’immediat: cooperació, consum responsable i suport a projectes on la dignitat de les persones està al centre.',
-      ur: 'ہم ایسی یکجہتی کو فروغ دیتے ہیں جو فوری ضرورت سے آگے دیکھتی ہے: تعاون، ذمہ دارانہ استعمال اور ایسے منصوبوں کی حمایت جہاں انسانی وقار مرکز میں ہو۔',
-      en: 'We foster a kind of solidarity that looks beyond the immediate: cooperation, responsible consumption, and support for projects that put people’s dignity at the centre.'
-    }
-  },
-  {
-    title: { es: 'Acompañamiento familiar', va: 'Acompanyament familiar', ur: 'خاندانی ساتھ', en: 'Family support' },
+    title: { es: 'Acción', va: 'Acció', ur: 'اقدام', en: 'Action' },
     image: '/assets/acompanamiento-familiar.webp',
+    layout: 'subtle',
     text: {
-      es: 'Cuando una familia atraviesa un momento difícil, el apoyo no termina en una ayuda puntual. Caminamos junto a las personas para favorecer procesos de estabilidad y esperanza.',
-      va: 'Quan una família travessa un moment difícil, el suport no acaba en una ajuda puntual. Caminem al costat de les persones per a afavorir processos d’estabilitat i esperança.',
-      ur: 'جب کوئی خاندان مشکل وقت سے گزرتا ہے تو تعاون صرف عارضی مدد پر ختم نہیں ہوتا۔ ہم لوگوں کے ساتھ چلتے ہیں تاکہ استحکام اور امید کے عمل کو فروغ دیں۔',
-      en: 'When a family goes through a difficult time, support doesn’t end with a one-off gesture. We walk alongside people to help build stability and hope.'
+      es: 'Cáritas Banyeres actúa de forma directa ante las situaciones de dificultad de las personas y familias que acuden en busca de apoyo. Esta labor se lleva a cabo mediante campañas de recogida de productos y bienes de primera necesidad, actividades de sensibilización, proyectos de ayuda activa, acompañamiento y apoyo continuo a las familias y, por supuesto, gracias a la valiosa colaboración de todas las personas que contribuís a la causa.',
+      va: 'Càritas Banyeres actua de forma directa davant les situacions de dificultat de les persones i famílies que acudeixen a la recerca de suport. Esta labor es duu a terme mitjançant campanyes de recollida de productes i béns de primera necessitat, activitats de sensibilització, projectes d’ajuda activa, acompanyament i suport continu a les famílies i, per descomptat, gràcies a la valuosa col·laboració de totes les persones que contribuïu a la causa.',
+      ur: 'کاریتاس بانیریس ان افراد اور خاندانوں کی مشکل صورتحال کا براہ راست جواب دیتا ہے جو مدد کی تلاش میں آتے ہیں۔ یہ کام بنیادی ضرورت کی اشیاء اور سامان اکٹھا کرنے کی مہمات، آگاہی کی سرگرمیوں، فعال امدادی منصوبوں، خاندانوں کے لیے مسلسل ساتھ اور تعاون، اور یقیناً اس مقصد میں تعاون کرنے والے تمام افراد کے قیمتی تعاون کی بدولت انجام دیا جاتا ہے۔',
+      en: 'Cáritas Banyeres takes direct action in response to the difficult situations faced by people and families who come to us seeking support. This work is carried out through campaigns to collect essential goods and products, awareness-raising activities, active aid projects, ongoing companionship and support for families and, of course, thanks to the valuable collaboration of everyone who contributes to the cause.'
     }
   }
 ];
@@ -599,7 +571,6 @@ export const contactInfo = {
 
 export const projectStories = {
   ropero: {
-    title: { es: 'El ropero por dentro', va: 'El rober per dins', ur: 'لباس گھر کے اندر', en: 'Inside the clothing bank' },
     intro: {
       es: 'El ropero solidario es uno de los espacios más vivos de Cáritas Banyeres: un lugar donde cada prenda se revisa, se ordena y se prepara con cuidado para que llegue en condiciones dignas a quienes más la necesitan.',
       va: 'El rober solidari és un dels espais més vius de Càritas Banyeres: un lloc on cada peça es revisa, s’ordena i es prepara amb cura perquè arribe en condicions dignes a qui més la necessita.',
@@ -630,7 +601,8 @@ export const projectStories = {
         }
       },
       {
-        image: '/assets/ropero-foto-03.webp',
+        image: '/assets/ropero-solidario.webp',
+        layout: 'fixed-bg',
         alt: { es: 'Vista general del ropero solidario.', va: 'Vista general del rober solidari.', ur: 'یکجہتی لباس گھر کا عمومی منظر۔', en: 'General view of the solidarity clothing bank.' },
         title: { es: 'Martes de atención', va: 'Dimarts d’atenció', ur: 'منگل کو خدمت کا دن', en: 'Tuesday opening hours' },
         text: {

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Menu, X, ArrowRight, Sparkles } from 'lucide-react';
 import { navItems, projectPages } from '../data/siteContent.js';
@@ -14,6 +14,19 @@ const LANG_OPTIONS = [
 export default function Header({ lang, setLang }) {
   const [open, setOpen] = useState(false);
   const [projectsOpen, setProjectsOpen] = useState(false);
+  const isHome = useLocation().pathname === '/';
+  const [scrolled, setScrolled] = useState(!isHome);
+
+  useEffect(() => {
+    if (!isHome) {
+      setScrolled(true);
+      return;
+    }
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isHome]);
 
   const closeAll = () => {
     setOpen(false);
@@ -31,7 +44,7 @@ export default function Header({ lang, setLang }) {
   }).filter(Boolean);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${!scrolled ? 'site-header-transparent' : ''}`}>
       <Link to="/" className="brand" onClick={handleBrandClick} aria-label="Cáritas Banyeres de Mariola">
         <img src="/assets/logo-caritas-banyeres.png" alt="Cáritas Parroquial Banyeres de Mariola" />
       </Link>

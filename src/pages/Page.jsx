@@ -76,7 +76,7 @@ export default function Page({ page, type, lang }) {
     <>
       <HeroParallax page={page} lang={lang} />
       <div className="page-shell">
-        {type === 'home' && <HomeContent t={t} lang={lang} />}
+        {type === 'home' && <HomeContent t={t} lang={lang} page={page} />}
         {type === 'cause' && <CauseContent t={t} lang={lang} />}
         {type === 'projects' && <ProjectsContent t={t} lang={lang} />}
         {type === 'collaborate' && <CollaborateContent t={t} lang={lang} />}
@@ -86,11 +86,12 @@ export default function Page({ page, type, lang }) {
   );
 }
 
-function HomeContent({ t, lang }) {
+function HomeContent({ t, lang, page }) {
   return (
     <>
+      <h1 className="home-title">{page.title[lang]}</h1>
       <SectionBlock eyebrow={{ es: 'Conócenos', va: 'Coneix-nos', ur: 'ہمیں جانیں', en: 'Get to know us' }[lang]} title={t.what}>
-        <p className="lead centered">{t.whatText}</p>
+        <p className="lead centered home-what-text">{t.whatText}</p>
         <div className="highlight-grid home-highlight-grid">
           {highlights.map((item, index) => (
             <motion.article
@@ -133,7 +134,8 @@ function CauseContent({ t, lang }) {
       image: block.image,
       title: block.title,
       text: block.text,
-      alt: block.title
+      alt: block.title,
+      layout: block.layout
     }))
   };
 
@@ -156,24 +158,42 @@ function FixedBackgroundStory({ story, lang, variant = '' }) {
       </motion.div>
 
       {story.blocks.map((block, index) => (
-        <section
-          className={`fixed-bg-panel ${index % 2 ? 'align-right' : 'align-left'}`}
-          style={{ backgroundImage: `url(${block.image})` }}
-          key={`${block.image}-${index}`}
-          aria-label={block.alt?.[lang] || block.title[lang]}
-        >
-          <div className="fixed-bg-shade" />
-          <motion.article
-            className="fixed-bg-card"
-            initial={{ opacity: 0, y: 32 }}
+        block.layout === 'subtle' ? (
+          <motion.section
+            className="cause-subtle-panel"
+            style={{ backgroundImage: `url(${block.image})` }}
+            key={`${block.image}-${index}`}
+            aria-label={block.alt?.[lang] || block.title[lang]}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.35 }}
             transition={{ duration: 0.65 }}
           >
-            <h2>{block.title[lang]}</h2>
-            <p>{block.text[lang]}</p>
-          </motion.article>
-        </section>
+            <div className="cause-subtle-card">
+              <h2>{block.title[lang]}</h2>
+              <p>{block.text[lang]}</p>
+            </div>
+          </motion.section>
+        ) : (
+          <section
+            className={`fixed-bg-panel ${index % 2 ? 'align-right' : 'align-left'}`}
+            style={{ backgroundImage: `url(${block.image})` }}
+            key={`${block.image}-${index}`}
+            aria-label={block.alt?.[lang] || block.title[lang]}
+          >
+            <div className="fixed-bg-shade" />
+            <motion.article
+              className="fixed-bg-card"
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{ duration: 0.65 }}
+            >
+              <h2>{block.title[lang]}</h2>
+              <p>{block.text[lang]}</p>
+            </motion.article>
+          </section>
+        )
       ))}
     </section>
   );

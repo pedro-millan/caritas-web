@@ -132,6 +132,29 @@ function MixedProjectStory({ story, lang }) {
             );
           }
 
+          if (layout === 'fixed-bg') {
+            return (
+              <section
+                className={`fixed-bg-panel dynamic-managed-fixed ${index % 2 ? 'align-right' : 'align-left'}`}
+                style={{ backgroundImage: `url(${block.image || '/assets/hero-inicio.webp'})` }}
+                key={key}
+                aria-label={block.alt?.[lang] || block.title?.[lang] || ''}
+              >
+                <div className="fixed-bg-shade" />
+                <motion.article
+                  className="fixed-bg-card"
+                  initial={{ opacity: 0, y: 34 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.35 }}
+                  transition={{ duration: 0.65 }}
+                >
+                  <h2>{block.title?.[lang]}</h2>
+                  <p>{block.text?.[lang]}</p>
+                </motion.article>
+              </section>
+            );
+          }
+
           if (layout === 'text') {
             return (
               <motion.section
@@ -201,7 +224,7 @@ export default function ProjectDetail({ project, lang }) {
 
   return (
     <>
-      <HeroParallax page={project} lang={lang} />
+      <HeroParallax page={project} lang={lang} hideIntro={project.slug === 'ropero'} />
       <div className={`page-shell narrow project-detail-page project-detail-${project.slug}`}>
         <Link to="/proyectos" className="back-link"><ArrowLeft size={16} /> {{ es: 'Volver a proyectos', va: 'Tornar a projectes', ur: 'منصوبوں پر واپس جائیں', en: 'Back to projects' }[lang]}</Link>
 
