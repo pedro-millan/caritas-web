@@ -2775,22 +2775,11 @@ h1, h2, h3, .page-hero p, .lead { font-family: 'Lora Local', Georgia, serif; fon
 }
 
 .page-hero-video {
-  height: 100vh !important;
-  min-height: 680px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 100vh;
+  aspect-ratio: 16 / 9;
   background: #3a1f28 !important;
-}
-@media (max-width: 1080px) {
-  .page-hero-video {
-    height: 100vh !important;
-    min-height: 600px !important;
-  }
-}
-@media (max-width: 720px) {
-  .page-hero-video {
-    height: auto !important;
-    min-height: 0 !important;
-    aspect-ratio: 16 / 9;
-  }
 }
 .page-hero-video .page-hero-img {
   inset: 0 !important;
