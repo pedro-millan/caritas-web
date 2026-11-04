@@ -2770,7 +2770,8 @@ h1, h2, h3, .page-hero p, .lead { font-family: 'Lora Local', Georgia, serif; fon
 .page-hero-sopar .page-hero-img {
   object-position: center 12% !important;
 }
-.news-entry-sopar img {
+.news-entry-sopar img,
+.event-card img[src$="sopar-2026.webp"] {
   object-position: center 10%;
 }
 

@@ -819,6 +819,19 @@ export const projectStories = {
 export const projectEvents = {
   'cena-del-hambre': [
     {
+      slug: 'sopar-de-la-fam-2026',
+      path: '/proyectos/cena-del-hambre/sopar-de-la-fam-2026',
+      title: { es: 'Sopar de la Fam 2026', va: 'Sopar de la Fam 2026', ur: 'سوپار دے لا فام 2026', en: 'Sopar de la Fam 2026' },
+      eyebrow: { es: '18 de septiembre · Maset dels Maseros', va: '18 de setembre · Maset dels Maseros', ur: '18 ستمبر · ماسیت دیلس ماسیروس', en: 'September 18 · Maset dels Maseros' },
+      summary: {
+        es: 'Una velada para ponernos al día de los proyectos de Cáritas y de la situación en Ranchi, rodeados de vecinos y familias que forman parte de esta gran familia.',
+        va: 'Una vetlada per a posar-nos al dia dels projectes de Càritas i de la situació a Ranchi, envoltats de veïns i famílies que formen part d’aquesta gran família.',
+        ur: 'کاریتاس کے منصوبوں اور رانچی کی صورتحال سے آگاہ ہونے کی ایک شام، ان پڑوسیوں اور خاندانوں کے درمیان جو اس بڑے خاندان کا حصہ ہیں۔',
+        en: 'An evening to catch up on Cáritas’ projects and the situation in Ranchi, surrounded by neighbours and families who are part of this big family.'
+      },
+      cover: '/assets/sopar-2026.webp'
+    },
+    {
       slug: 'sopar-de-la-fam-2025',
       path: '/proyectos/cena-del-hambre/sopar-de-la-fam-2025',
       title: { es: 'Sopar de la Fam 2025', va: 'Sopar de la Fam 2025', ur: 'سوپار دے لا فام 2025', en: 'Sopar de la Fam 2025' },
@@ -835,6 +848,87 @@ export const projectEvents = {
 };
 
 export const eventPages = [
+  {
+    slug: 'sopar-de-la-fam-2026',
+    parentSlug: 'cena-del-hambre',
+    hero: '/assets/sopar-2026.webp',
+    title: { es: 'Sopar de la Fam 2026', va: 'Sopar de la Fam 2026', ur: 'سوپار دے لا فام 2026', en: 'Sopar de la Fam 2026' },
+    eyebrow: { es: 'Cena del hambre · 2026', va: 'Sopar de la fam · 2026', ur: 'بھوک کا عشائیہ · 2026', en: 'Hunger dinner · 2026' },
+    intro: {
+      es: '¡La pasada cena del hambre fue una velada para recordar! Una noche de cercanía, proyectos compartidos y comunidad alrededor de una mesa sencilla.',
+      va: 'El passat sopar de la fam va ser una vetlada per a recordar! Una nit de proximitat, projectes compartits i comunitat al voltant d’una taula senzilla.',
+      ur: 'گزشتہ بھوک کا عشائیہ ایک یادگار شام تھی! قربت، مشترکہ منصوبوں اور ایک سادہ میز کے گرد جمع ہونے والی برادری کی رات۔',
+      en: 'Our last hunger dinner was an evening to remember! A night of closeness, shared projects and community around a simple table.'
+    },
+    blocks: [
+      {
+        image: '/assets/sopar-fam-2026-01.webp',
+        alt: { es: 'Sala llena de asistentes durante el Sopar de la Fam 2026.', va: 'Sala plena d’assistents durant el Sopar de la Fam 2026.', ur: 'سوپار دے لا فام 2026 کے دوران حاضرین سے بھرا ہال۔', en: 'Room full of attendees during Sopar de la Fam 2026.' },
+        title: { es: 'Una velada para recordar', va: 'Una vetlada per a recordar', ur: 'ایک یادگار شام', en: 'An evening to remember' },
+        text: {
+          es: 'En ella se presentaron diferentes proyectos que a día de hoy estamos llevando a cabo, y el Maset dels Maseros se llenó de vecinos y familias con ganas de conocerlos de cerca.',
+          va: 'En ella es van presentar diferents projectes que a hores d’ara estem duent a terme, i el Maset dels Maseros es va omplir de veïns i famílies amb ganes de conéixer-los de prop.',
+          ur: 'اس میں ہمارے جاری مختلف منصوبے پیش کیے گئے، اور ماسیت دیلس ماسیروس پڑوسیوں اور خاندانوں سے بھر گیا جو ان کو قریب سے جاننے کے مشتاق تھے۔',
+          en: 'Several of the projects we are carrying out today were presented, and Maset dels Maseros filled with neighbours and families eager to get to know them up close.'
+        }
+      },
+      {
+        image: '/assets/sopar-fam-2026-02.webp',
+        alt: { es: 'Presentación de los proyectos ante los asistentes.', va: 'Presentació dels projectes davant dels assistents.', ur: 'حاضرین کے سامنے منصوبوں کی پیشکش۔', en: 'Presentation of the projects to the attendees.' },
+        title: { es: 'Acogida y acompañamiento', va: 'Acollida i acompanyament', ur: 'استقبال اور رفاقت', en: 'Welcome and support' },
+        text: {
+          es: 'Se ahondó en detalle en cuestiones como la acogida a los diferentes usuarios y familias, su posterior acompañamiento y el soporte mediante bienes de primera necesidad. También en cómo, a través del nuevo sitio web y de nuestras redes sociales, se brinda una atención muy directa que facilita tanto la acogida como la colaboración de los voluntarios que tienen a bien poner su granito de arena y unirse a la causa.',
+          va: 'Es va aprofundir en qüestions com l’acollida als diferents usuaris i famílies, el seu posterior acompanyament i el suport mitjançant béns de primera necessitat. També en com, a través del nou lloc web i de les nostres xarxes socials, s’ofereix una atenció molt directa que facilita tant l’acollida com la col·laboració dels voluntaris que tenen a bé posar el seu gra d’arena i unir-se a la causa.',
+          ur: 'مختلف صارفین اور خاندانوں کے استقبال، بعد ازاں ان کی رفاقت اور بنیادی ضروریات کی اشیاء کے ذریعے مدد جیسے موضوعات پر تفصیل سے بات کی گئی۔ نیز یہ بھی بتایا گیا کہ نئی ویب سائٹ اور ہمارے سوشل میڈیا کے ذریعے نہایت براہ راست توجہ دی جاتی ہے، جو استقبال کو بھی آسان بناتی ہے اور ان رضاکاروں کے تعاون کو بھی جو اپنا حصہ ڈال کر اس مقصد میں شامل ہونا چاہتے ہیں۔',
+          en: 'We went into detail on topics such as welcoming the different users and families, supporting them afterwards and providing essential goods. We also covered how, through the new website and our social media, we offer very direct attention that makes both the welcome and the collaboration of volunteers easier — people who kindly lend a hand and join the cause.'
+        }
+      },
+      {
+        image: '/assets/sopar-fam-2026-03.webp',
+        alt: { es: 'Asistentes compartiendo mesa durante la cena.', va: 'Assistents compartint taula durant el sopar.', ur: 'عشائیے کے دوران ایک ہی میز پر بیٹھے حاضرین۔', en: 'Attendees sharing a table during the dinner.' },
+        title: { es: 'Cáritas es una familia', va: 'Càritas és una família', ur: 'کاریتاس ایک خاندان ہے', en: 'Cáritas is a family' },
+        text: {
+          es: 'Se habló también de la agrupación vecinal, haciendo especial hincapié en que Cáritas es una familia conformada por todos, y que cada vez son más las personas que se suman a nosotros mejorando, mediante pequeños gestos, una comunidad que precisa apoyo y comprensión.',
+          va: 'També es va parlar de l’agrupació veïnal, fent especial èmfasi en què Càritas és una família conformada per tots, i que cada vegada són més les persones que se sumen a nosaltres millorant, mitjançant xicotets gestos, una comunitat que necessita suport i comprensió.',
+          ur: 'محلے کی اجتماعی تنظیم کے بارے میں بھی بات ہوئی، اور خاص طور پر اس بات پر زور دیا گیا کہ کاریتاس ہم سب سے مل کر بننے والا ایک خاندان ہے، اور ایسے لوگوں کی تعداد بڑھ رہی ہے جو ہمارے ساتھ شامل ہو کر چھوٹے چھوٹے اقدامات سے ایک ایسی برادری کو بہتر بنا رہے ہیں جسے سہارے اور سمجھ بوجھ کی ضرورت ہے۔',
+          en: 'We also talked about the neighbourhood group, stressing that Cáritas is a family made up of all of us, and that more and more people are joining us, improving through small gestures a community that needs support and understanding.'
+        }
+      },
+      {
+        image: '/assets/sopar-fam-2026-04.webp',
+        alt: { es: 'Mural «Ajudem l’Índia» junto a fotografías de niños y niñas aprendiendo en Ranchi.', va: 'Mural «Ajudem l’Índia» al costat de fotografies de xiquets i xiquetes aprenent a Ranchi.', ur: 'رانچی میں سیکھتے بچوں کی تصاویر کے ساتھ «Ajudem l’Índia» (آئیے بھارت کی مدد کریں) کا بینر۔', en: 'The “Ajudem l’Índia” banner next to photos of children learning in Ranchi.' },
+        title: { es: 'Ranchi, presente en la sala', va: 'Ranchi, present a la sala', ur: 'رانچی، ہال میں موجود', en: 'Ranchi, present in the hall' },
+        text: {
+          es: 'Ranchi estuvo presente en cada rincón: la sala se decoró con fotografías de los niños y niñas aprendiendo en clase, mandalas y grandes letras que nos recordaban el porqué de la noche, «Ajudem l’Índia». Hubo incluso mensajes audiovisuales muy especiales desde Ranchi (India) por parte de Tere Ferre, y testimonios entrañables de niños y niñas cuyas vidas dieron un giro de 180º gracias a la contribución de las familias de Banyeres.',
+          va: 'Ranchi va estar present a cada racó: la sala es va decorar amb fotografies dels xiquets i xiquetes aprenent a classe, mandales i grans lletres que ens recordaven el perquè de la nit, «Ajudem l’Índia». Hi va haver fins i tot missatges audiovisuals molt especials des de Ranchi (l’Índia) per part de Tere Ferre, i testimonis entranyables de xiquets i xiquetes les vides dels quals van donar un gir de 180º gràcies a la contribució de les famílies de Banyeres.',
+          ur: 'رانچی ہر کونے میں موجود تھا: ہال کو بچوں کی کلاس میں پڑھتے ہوئے تصاویر، منڈالوں اور بڑے بڑے حروف سے سجایا گیا تھا جو ہمیں اس رات کا مقصد یاد دلاتے تھے، «Ajudem l’Índia» (آئیے بھارت کی مدد کریں)۔ رانچی (بھارت) سے تیرے فیرے کی جانب سے نہایت خاص ویڈیو پیغامات بھی دکھائے گئے، اور ان بچوں کی دل کو چھو لینے والی گواہیاں بھی جن کی زندگیاں بانیریس کے خاندانوں کے تعاون کی بدولت مکمل طور پر بدل گئیں۔',
+          en: 'Ranchi was present in every corner: the hall was decorated with photos of the children learning in class, mandalas and big letters reminding us why we were there, “Ajudem l’Índia” (“Let’s help India”). There were even very special audiovisual messages from Ranchi (India) from Tere Ferre, and heartwarming testimonies from children whose lives turned around 180º thanks to the contribution of the families of Banyeres.'
+        }
+      },
+      {
+        image: '/assets/sopar-fam-2026-05.webp',
+        alt: { es: 'Mesa de comercio justo de Cáritas Parroquial Banyeres de Mariola.', va: 'Taula de comerç just de Càritas Parroquial Banyeres de Mariola.', ur: 'کاریتاس پیرش بانیریس دے مریولا کی منصفانہ تجارت کی میز۔', en: 'Fair trade table of Cáritas Parroquial Banyeres de Mariola.' },
+        title: { es: 'Comercio justo', va: 'Comerç just', ur: 'منصفانہ تجارت', en: 'Fair trade' },
+        text: {
+          es: 'La velada contó también con una mesa de comercio justo con chocolates, tés, cacao, panela y artesanía: una forma sencilla de que nuestras compras ayuden a quienes más lo necesitan.',
+          va: 'La vetlada va comptar també amb una taula de comerç just amb xocolates, tes, cacau, panela i artesania: una manera senzilla que les nostres compres ajuden a qui més ho necessita.',
+          ur: 'اس شام میں منصفانہ تجارت کی ایک میز بھی سجی تھی جس پر چاکلیٹ، چائے، کوکو، پانیلا اور دستکاری کی اشیاء تھیں: ایک سادہ طریقہ جس سے ہماری خریداری ان لوگوں کے کام آئے جنہیں سب سے زیادہ ضرورت ہے۔',
+          en: 'The evening also featured a fair trade table with chocolates, teas, cocoa, panela and crafts: a simple way for our shopping to help those who need it most.'
+        }
+      },
+      {
+        image: '/assets/sopar-fam-2026-06.webp',
+        alt: { es: 'Pan, aceite y fruta sobre la mesa de la cena.', va: 'Pa, oli i fruita sobre la taula del sopar.', ur: 'عشائیے کی میز پر روٹی، تیل اور پھل۔', en: 'Bread, oil and fruit on the dinner table.' },
+        title: { es: 'Una cena humilde', va: 'Un sopar humil', ur: 'ایک سادہ عشائیہ', en: 'A humble dinner' },
+        text: {
+          es: 'Como viene siendo costumbre, la cena fue sencilla: pan, aceite y fruta. Con todo esto, y deseando que disfrutaseis de la noche tanto como nosotros, os compartimos estas fotos mientras ya planeamos la próxima.',
+          va: 'Com és costum, el sopar va ser senzill: pa, oli i fruita. Amb tot això, i desitjant que gaudíreu de la nit tant com nosaltres, vos compartim estes fotos mentre ja planegem la pròxima.',
+          ur: 'روایت کے مطابق عشائیہ سادہ رہا: روٹی، تیل اور پھل۔ اس سب کے ساتھ، اور اس امید پر کہ آپ نے بھی یہ رات ہماری طرح پسند کی، ہم یہ تصاویر آپ کے ساتھ شیئر کر رہے ہیں جبکہ ہم پہلے ہی اگلے عشائیے کی منصوبہ بندی کر رہے ہیں۔',
+          en: 'As is tradition, dinner was simple: bread, oil and fruit. With all this, and hoping you enjoyed the night as much as we did, we’re sharing these photos while we already plan the next one.'
+        }
+      }
+    ]
+  },
   {
     slug: 'sopar-de-la-fam-2025',
     parentSlug: 'cena-del-hambre',
