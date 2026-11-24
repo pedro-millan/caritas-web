@@ -411,6 +411,25 @@ export const newsItems = [
       ur: 'اگلے جمعہ، 18 ستمبر کو ہم ماسیت دیلس ماسیروس میں سوپار دے لا فام 2026 منا رہے ہیں، جس کے فوائد رانچی میں تیرے فیرے کے منصوبوں کی مدد کے لیے جائیں گے۔',
       en: 'Next Friday, September 18, we’re holding Sopar de la Fam 2026 at Maset dels Maseros, in support of Tere Ferre’s projects in Ranchi.'
     }
+  },
+
+  {
+    slug: 'mercadillo-de-navidad-2026',
+    path: '/noticias/mercadillo-de-navidad-2026',
+    title: {
+      es: 'Mercadillo de Navidad 2026',
+      va: 'Mercadet de Nadal 2026',
+      ur: 'کرسمس بازار 2026',
+      en: 'Christmas Market 2026'
+    },
+    date: { es: '12 y 13 de diciembre', va: '12 i 13 de desembre', ur: '12 اور 13 دسمبر', en: 'December 12–13' },
+    cover: '/assets/mercadillo-navidad-2026.webp',
+    text: {
+      es: '¡Vuelve nuestro mercadillo navideño! Los días 12 y 13 de diciembre os esperamos en la Plaza de la Iglesia con flores de Pascua, photocall, rifa, comercio justo y tómbola.',
+      va: 'Torna el nostre mercadet de Nadal! Els dies 12 i 13 de desembre vos esperem a la Plaça de l’Església amb flors de Nadal, photocall, rifa, comerç just i tómbola.',
+      ur: 'ہمارا کرسمس بازار واپس آ گیا ہے! 12 اور 13 دسمبر کو ہم چرچ اسکوائر میں کرسمس کے پھولوں، فوٹو کال، لاٹری، منصفانہ تجارت اور تمبولا کے ساتھ آپ کے منتظر ہیں۔',
+      en: 'Our Christmas market is back! On December 12 and 13 we’ll be waiting for you in Plaza de la Iglesia with poinsettias, a photocall, a raffle, fair trade and a tombola.'
+    }
   }
 
 ];
@@ -555,6 +574,65 @@ export const newsPages = [
           ur: 'آپ اپنا ٹکٹ قصبے کے تمباکو فروشوں (Estancos)، کاسا آبادیا، فوٹو ویڈیو مورینیت اور ویاتخیس یورو-ٹورز سے حاصل کر سکتے ہیں۔ شام کے تمام فوائد مشنری تیرے فیرے کے رانچی، بھارت میں جاری منصوبوں کی مدد کے لیے استعمال ہوں گے۔ ہم آپ کے ساتھ ایک شاندار رات گزارنے کے منتظر ہیں!',
           en: 'You can get your ticket at the local tobacco shops (Estancos), Casa Abadía, Foto Vídeo Morenet and Viatges Euro-Tours. All proceeds from the evening will go to support the projects missionary Tere Ferre runs in Ranchi, India. We hope you’ll join us for a great night!'
         }
+      }
+    ]
+  },
+
+  {
+    slug: 'mercadillo-de-navidad-2026',
+    hero: '/assets/mercadillo-navidad-2026.webp',
+    title: {
+      es: '¡Vuelve nuestro Mercadillo de Navidad!',
+      va: 'Torna el nostre Mercadet de Nadal!',
+      ur: 'ہمارا کرسمس بازار واپس آ گیا ہے!',
+      en: 'Our Christmas Market is back!'
+    },
+    eyebrow: { es: 'Noticias · Banyeres de Mariola', va: 'Notícies · Banyeres de Mariola', ur: 'خبریں · بانیریس دے مریولا', en: 'News · Banyeres de Mariola' },
+    intro: {},
+    blocks: [
+      {
+        image: '/assets/mercadillo-navidad-2026.webp',
+        alt: { es: 'Cartel del Mercadillo de Navidad 2026: 12 y 13 de diciembre en la Plaza de la Iglesia.', va: 'Cartell del Mercadet de Nadal 2026: 12 i 13 de desembre a la Plaça de l’Església.', ur: 'کرسمس بازار 2026 کا پوسٹر: 12 اور 13 دسمبر، چرچ اسکوائر۔', en: 'Christmas Market 2026 poster: December 12–13 in Plaza de la Iglesia.' },
+        lead: {
+          es: 'Llega diciembre y, con él, vuelve una de nuestras citas más esperadas del año: el Mercadillo de Navidad de Cáritas Banyeres.',
+          va: 'Arriba desembre i, amb ell, torna una de les nostres cites més esperades de l’any: el Mercadet de Nadal de Càritas Banyeres.',
+          ur: 'دسمبر آ گیا ہے اور اس کے ساتھ سال کی ہماری سب سے زیادہ منتظر تقریبات میں سے ایک واپس آ رہی ہے: کاریتاس بانیریس کا کرسمس بازار۔',
+          en: 'December is here and, with it, one of our most anticipated events of the year returns: the Cáritas Banyeres Christmas Market.'
+        },
+        facts: [
+          { icon: 'calendar', text: { es: '12 y 13 de diciembre', va: '12 i 13 de desembre', ur: '12 اور 13 دسمبر', en: 'December 12–13' } },
+          { icon: 'pin', text: { es: 'Plaza de la Iglesia', va: 'Plaça de l’Església', ur: 'چرچ اسکوائر (پلازا دے لا ایگلیسیا)', en: 'Plaza de la Iglesia' } }
+        ],
+        text: {
+          es: 'Como ya es costumbre, montaremos nuestros stands llenos de propuestas para vivir estas fiestas de una forma más solidaria. Una ocasión perfecta para pasear, saludar a los vecinos, encontrar ese detalle especial para regalar y, de paso, apoyar la labor de Cáritas.',
+          va: 'Com ja és costum, muntarem els nostres estands plens de propostes per a viure estes festes d’una manera més solidària. Una ocasió perfecta per a passejar, saludar els veïns, trobar eixe detall especial per a regalar i, de pas, donar suport a la tasca de Càritas.',
+          ur: 'ہمیشہ کی طرح ہم اپنے اسٹالز لگائیں گے جو ان تہواروں کو زیادہ یکجہتی کے ساتھ منانے کی تجاویز سے بھرے ہوں گے۔ یہ گھومنے پھرنے، پڑوسیوں سے ملنے، کوئی خاص تحفہ تلاش کرنے اور ساتھ ہی کاریتاس کے کام کی حمایت کرنے کا بہترین موقع ہے۔',
+          en: 'As is tradition, we’ll set up our stands full of ideas to enjoy the holidays in a more caring way. It’s the perfect chance to take a stroll, say hello to neighbours, find that special little gift and, at the same time, support the work of Cáritas.'
+        }
+      },
+      {
+        text: {
+          es: 'Si os acercáis a visitarnos, esto es lo que encontraréis:',
+          va: 'Si vos acosteu a visitar-nos, això és el que hi trobareu:',
+          ur: 'اگر آپ ہم سے ملنے آئیں تو آپ کو یہ سب ملے گا:',
+          en: 'If you come and visit us, this is what you’ll find:'
+        },
+        list: [
+          { icon: 'flower', text: { es: 'Flores de Pascua en maceta, para llenar de color vuestras casas.', va: 'Flors de Nadal en test, per a omplir de color les vostres cases.', ur: 'گملوں میں کرسمس کے پھول (پوئنسیٹیا)، اپنے گھروں کو رنگوں سے بھرنے کے لیے۔', en: 'Potted poinsettias to fill your home with colour.' } },
+          { icon: 'camera', text: { es: 'Un photocall navideño donde llevaros una foto de recuerdo.', va: 'Un photocall nadalenc on endur-vos una foto de record.', ur: 'کرسمس فوٹو کال جہاں آپ یادگار تصویر لے سکتے ہیں۔', en: 'A Christmas photocall where you can take home a souvenir photo.' } },
+          { icon: 'ticket', text: { es: 'Boletos para la rifa, cuyo sorteo tendrá lugar el 6 de enero de 2027.', va: 'Butlletes per a la rifa, el sorteig de la qual tindrà lloc el 6 de gener de 2027.', ur: 'لاٹری کے ٹکٹ، جس کی قرعہ اندازی 6 جنوری 2027 کو ہوگی۔', en: 'Tickets for the raffle, which will be drawn on January 6, 2027.' } },
+          { icon: 'handshake', text: { es: 'Productos de primera calidad en nuestro ya habitual puesto de comercio justo.', va: 'Productes de primera qualitat a la nostra ja habitual parada de comerç just.', ur: 'ہمارے معمول کے منصفانہ تجارت کے اسٹال پر اعلیٰ معیار کی مصنوعات۔', en: 'Top-quality products at our now-familiar fair trade stall.' } },
+          { icon: 'gift', text: { es: 'Una tómbola en la que probar suerte y ganar alguno de sus premios.', va: 'Una tómbola on provar sort i guanyar algun dels seus premis.', ur: 'ایک تمبولا جہاں آپ اپنی قسمت آزما کر اس کے انعامات میں سے کوئی جیت سکتے ہیں۔', en: 'A tombola where you can try your luck and win one of its prizes.' } }
+        ]
+      },
+      {
+        text: {
+          es: 'Cada flor, cada boleto y cada producto de comercio justo es un pequeño gesto que, sumado a muchos otros, se convierte en ayuda real para quienes más lo necesitan. Venid con la familia, con los amigos o con quien queráis: la Navidad se disfruta más cuando se comparte.',
+          va: 'Cada flor, cada butlleta i cada producte de comerç just és un xicotet gest que, sumat a molts altres, es convertix en ajuda real per a qui més ho necessita. Veniu amb la família, amb els amics o amb qui vulgueu: el Nadal es gaudix més quan es compartix.',
+          ur: 'ہر پھول، ہر ٹکٹ اور منصفانہ تجارت کی ہر چیز ایک چھوٹا سا قدم ہے جو بہت سے دوسرے قدموں کے ساتھ مل کر ضرورت مندوں کے لیے حقیقی مدد بن جاتا ہے۔ اپنے خاندان، دوستوں یا جس کے ساتھ چاہیں آئیں: کرسمس بانٹنے سے زیادہ خوشگوار ہوتا ہے۔',
+          en: 'Every flower, every ticket and every fair trade product is a small gesture that, added to many others, becomes real help for those who need it most. Come with your family, your friends or whoever you like: Christmas is better when it’s shared.'
+        },
+        closing: { es: 'Un año más, ¡os esperamos con ilusión!', va: 'Un any més, vos esperem amb il·lusió!', ur: 'ایک سال اور، ہم پورے جوش و خروش سے آپ کے منتظر ہیں!', en: 'Once again, we can’t wait to see you!' }
       }
     ]
   }

@@ -1,11 +1,24 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, CalendarDays, MapPin, Flower2, Camera, Ticket, Handshake, Gift } from 'lucide-react';
 import { motion } from 'framer-motion';
 import HeroParallax from '../components/HeroParallax.jsx';
 
+const icons = { calendar: CalendarDays, pin: MapPin, flower: Flower2, camera: Camera, ticket: Ticket, handshake: Handshake, gift: Gift };
+
+function IconList({ items, className, lang }) {
+  return (
+    <ul className={className}>
+      {items.map((item) => {
+        const Icon = icons[item.icon];
+        return <li key={item.icon}><Icon size={20} aria-hidden="true" /><span>{item.text[lang]}</span></li>;
+      })}
+    </ul>
+  );
+}
+
 export default function NewsDetail({ news, lang }) {
   const blocks = news.blocks || [];
-  const staticLayout = news.slug === 'sopar-de-la-fam-2026';
+  const staticLayout = ['sopar-de-la-fam-2026', 'mercadillo-de-navidad-2026'].includes(news.slug);
 
   return (
     <>
@@ -22,10 +35,14 @@ export default function NewsDetail({ news, lang }) {
             </div>
             <div className="news-static-copy">
               <span>{news.eyebrow[lang]}</span>
-              {blocks.map((block) => (
-                <div key={block.title[lang]}>
-                  <h2>{block.title[lang]}</h2>
-                  <p>{block.text[lang]}</p>
+              {blocks.map((block, index) => (
+                <div key={index}>
+                  {block.title && <h2>{block.title[lang]}</h2>}
+                  {block.lead && <p className="news-static-lead">{block.lead[lang]}</p>}
+                  {block.facts && <IconList items={block.facts} className="news-static-facts" lang={lang} />}
+                  {block.text && <p>{block.text[lang]}</p>}
+                  {block.list && <IconList items={block.list} className="news-static-list" lang={lang} />}
+                  {block.closing && <p className="news-static-closing">{block.closing[lang]}</p>}
                 </div>
               ))}
             </div>

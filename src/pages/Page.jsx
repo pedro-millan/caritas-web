@@ -229,9 +229,10 @@ function NewsContent({ t, lang }) {
       </SectionBlock>
       <section className="news-card-section">
         <div className="event-card-grid news-card-grid">
-          {newsItems.map((item) => (
+          {/* newsItems se añaden en orden cronológico; se muestran de la más reciente a la más antigua */}
+          {[...newsItems].reverse().map((item) => (
             <motion.article
-              className={`event-card news-entry-card ${item.slug === 'sopar-de-la-fam-2026' ? 'news-entry-sopar' : ''}`}
+              className={`event-card news-entry-card ${['sopar-de-la-fam-2026', 'mercadillo-de-navidad-2026'].includes(item.slug) ? 'news-entry-sopar' : ''}`}
               key={item.slug}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
